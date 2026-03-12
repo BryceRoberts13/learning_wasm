@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pong WASM</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #1a1a2e;
+      font-family: system-ui, sans-serif;
+    }
+    canvas {
+      border: 2px solid #eee;
+      background: #16213e;
+    }
+    #error {
+      color: #e74c3c;
+      padding: 1rem;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <div id="error"></div>
+  </div>
+  <script type="module" src="js/game.js"></script>
+</body>
+</html>
